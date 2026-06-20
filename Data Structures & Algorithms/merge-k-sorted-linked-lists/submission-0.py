@@ -12,10 +12,7 @@ class Solution:
 
         for i,node in enumerate(lists):
 
-            if node == None:
-                pass
-            else:
-
+            if node is not None:
                 tup = (node.val,i,node)
 
                 heapq.heappush(heap,tup)
@@ -30,9 +27,7 @@ class Solution:
             point.next = node
             point = point.next
 
-            if node.next is None:
-                pass
-            else:
+            if node.next is not None:
                 heapq.heappush(heap, (node.next.val,index,node.next))
 
 

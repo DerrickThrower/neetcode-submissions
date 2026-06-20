@@ -18,7 +18,8 @@ class Solution:
             elif n == "/":
                 val1 = int(s.pop(-1))
                 val2 = int(s.pop(-1))
-
+                if val1 == 0:
+                    raise ZeroDivisionError("division by zero in RPN expression")
                 s.append(val2 / val1)
             elif n == "*":
                 val1 = int(s.pop(-1))

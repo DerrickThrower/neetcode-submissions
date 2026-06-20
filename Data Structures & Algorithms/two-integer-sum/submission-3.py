@@ -13,5 +13,6 @@ class Solution:
 
 
             seen[val] = i
-        
+
+        return []
 
