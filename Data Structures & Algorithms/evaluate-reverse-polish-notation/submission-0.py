@@ -14,6 +14,8 @@ class Solution:
                 stack.append(stack.pop() * stack.pop())
             elif c == "/":
                 a, b = stack.pop(), stack.pop()
+                if a == 0:
+                    raise ZeroDivisionError("division by zero in RPN expression")
                 stack.append(int(float(b) / a))
             else:
                 stack.append(int(c))

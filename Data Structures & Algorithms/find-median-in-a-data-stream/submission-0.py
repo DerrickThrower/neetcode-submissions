@@ -11,6 +11,8 @@ class MedianFinder:
         
 
     def findMedian(self) -> float:
+        if not self.arrayL:
+            raise ValueError("findMedian called with no numbers added")
 
         self.arrayL.sort()
 

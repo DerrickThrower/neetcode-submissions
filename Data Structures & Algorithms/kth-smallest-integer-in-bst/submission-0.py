@@ -26,5 +26,7 @@ class Solution:
             
         inorder(root)
 
+        if result[0] is None:
+            raise ValueError(f"k={k} is out of range for the given BST")
 
         return result[0]

@@ -11,3 +11,5 @@ class Solution:
 
             seen[n] = i
 
+        return []
+

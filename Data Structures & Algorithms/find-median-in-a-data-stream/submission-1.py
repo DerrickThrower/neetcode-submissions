@@ -20,6 +20,8 @@ class MedianFinder:
         
 
     def findMedian(self) -> float:
+        if not self.lo and not self.hi:
+            raise ValueError("findMedian called with no numbers added")
 
         if len(self.lo) == len(self.hi):
             return (-self.lo[0]+ self.hi[0]) / 2

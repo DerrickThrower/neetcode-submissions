@@ -11,4 +11,5 @@ class Solution:
 
             
             seen[val] = index
-        
+
+        return []
